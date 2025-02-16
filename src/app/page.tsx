@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <div>
       <div className="flex justify-center items-center mt-[25vh]">
-        <div className="top-0 left-0 fixed p-4 text-xl font-mono">
+        <div className="fixed p-4 text-xl font-mono bottom-0 xl:top-0 left-0">
           <h1 className="mb-10">very simple pomodoro timer</h1>
           <p className="mb-10">made by me</p>
-          <p className="mb-10">press space to pause/resume timer</p>
+          <p className="mb-10 ">press space to pause/resume timer</p>
           <a
             target="_blank"
             href="https://github.com/TimofeyShelestov"
@@ -25,7 +25,7 @@ export default function Home() {
         <Button
           title="Pomodoro"
           onClick={() => setTime(2400)}
-          className="mr-7"
+          className="mr-7 block"
         />
         <Button
           title="Short Break"
