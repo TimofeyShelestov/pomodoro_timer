@@ -1,1 +1,1 @@
-very simple pomodoro timer wwith nextjs
+very simple pomodoro timer with nextjs

@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  assetPrefix: "/pomodoro_timer/",
+  basePath: "/pomodoro_timer",
+  output: "export",
 };
 
 export default nextConfig;
