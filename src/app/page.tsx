@@ -9,17 +9,18 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex justify-center items-center mt-[25vh]">
-        <div className="fixed p-4 text-xl font-mono bottom-0 xl:top-0 left-0">
+      <div className="flex justify-center items-center mt-[10vh] xl:mt-[25vh]">
+        <div className="fixed p-4 text-xl font-mono bottom-0 xl:top-0 xl:left-0">
           <h1 className="mb-10">very simple pomodoro timer</h1>
-          <p className="mb-10">made by me</p>
           <p className="mb-10 ">press space to pause/resume timer</p>
+          <p className="mb-10">press R to reset timer</p>
+          <p className="mb-10">made by me</p>
           <a
             target="_blank"
             href="https://github.com/TimofeyShelestov"
             className="hover:text-green-900"
           >
-            github
+            github(clickable)
           </a>
         </div>
         <Button

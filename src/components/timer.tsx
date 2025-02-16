@@ -31,6 +31,11 @@ export default function Timer({
       if (event.code === "Space") {
         setIsRunning((prev) => !prev);
       }
+
+      if (event.key === "r") {
+        setTimeLeft(time);
+        setIsRunning(false);
+      }
     };
 
     document.addEventListener("keydown", handleKeyDown);
@@ -50,6 +55,14 @@ export default function Timer({
           title={isRunning ? "Stop" : "Start"}
           className="mt-16"
           onClick={() => setIsRunning((isRunning) => !isRunning)}
+        />
+        <Button
+          title="Reset"
+          className="mt-16 ml-4 lg:mb-8"
+          onClick={() => {
+            setTimeLeft((timeLeft) => (timeLeft = time));
+            setIsRunning(false);
+          }}
         />
       </div>
     </div>
